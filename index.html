@@ -18,9 +18,9 @@
             </tr>
             <tr>
                 <td>
-                    <label for="pass">Password</label>
+                    <label for="password">Password</label>
                 </td>
-                <td> <input type="password" name="password" id="pass" minlength="6" maxlength="12" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" required></td>
+                <td> <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" required></td>
             </tr>
             <tr>
                 <td>
@@ -91,12 +91,13 @@
             </tr>
         </table>
 <div class="button-submit-container">
-    <button type="submit" class="button-submit">Submit</button>
+    <button id="submit" type="submit" class="button-submit">Submit</button>
 </div>
 
 
     </form>
 </div>
-<script src="JS/post-data.js"></script>
+<script src="Js/post-data.js"></script>
+<script src="Js/custom-validation.js"></script>
 </body>
 </html>
