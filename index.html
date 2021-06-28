@@ -6,6 +6,98 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<div class="form-container">
+    <form id="form">
+        <h1 class="form-header">Add employer</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td> <input type="email" id="email" name="email" required ></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td> <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Full name</label>
+                </td>
+                <td> <input type="text" id="name" name="fullName" pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthday">Birthday date</label>
+                </td>
+                <td> <input type="date" name="birthday" id="birthday" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="male">Gender</label>
+                </td>
+                <td> <label><input type="radio" name="gender"  id="male" value="MALE" class="radio-gender" > Male</label></td>
+            </tr>
+            <tr>
+                <td>
 
+                </td>
+                <td>
+                    <label><input type="radio" name="gender" id="female" value="FEMALE" class="radio-gender" required>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone number:</label>
+                </td>
+                <td> <input type="tel" id="phone" name="phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"  required ></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="link">Profile link:</label>
+                </td>
+                <td> <input type="url" id="link" name="profileURL"  ></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="salary">Salary:</label>
+                </td>
+                <td> <input type="number" id="salary" name="salary" min="0" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="token">Token:</label>
+                </td>
+                <td> <input type="text" id="token" name="tokenId" pattern="\b[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}\b" value="0744a0c6-79c8-4ff1-813e-b2a1975dae51" required></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="comment">Comment</label>
+                </td>
+                <td> <textarea name="comment" id="comment"  cols="30" rows="10" ></textarea></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="accept">I agree ... </label>
+                </td>
+                <td>
+                    <input id="accept" type="checkbox" name="acceptManual" value="true" data-val="true" required>
+                </td>
+            </tr>
+        </table>
+<div class="button-submit-container">
+    <button id="submit" type="submit" class="button-submit">Submit</button>
+</div>
+
+
+    </form>
+</div>
+<script src="Js/post-data.js"></script>
+<script src="Js/custom-validation.js"></script>
 </body>
 </html>
