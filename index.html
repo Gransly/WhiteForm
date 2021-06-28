@@ -14,71 +14,71 @@
                 <td>
                     <label for="email">Email</label>
                 </td>
-                <td> <input type="text" id="email"></td>
+                <td> <input type="email" id="email" required value="bob031299@gmail.com"></td>
             </tr>
             <tr>
                 <td>
                     <label for="pass">Password</label>
                 </td>
-                <td> <input type="password" id="pass"></td>
+                <td> <input type="password" id="pass" minlength="6" maxlength="12" required></td>
             </tr>
             <tr>
                 <td>
                     <label for="name">Full name</label>
                 </td>
-                <td> <input type="text" id="name"></td>
+                <td> <input type="text" id="name" pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})" required></td>
             </tr>
             <tr>
                 <td>
                     <label for="birthday">Birthday date</label>
                 </td>
-                <td> <input type="date" id="birthday"></td>
+                <td> <input type="date" id="birthday" required></td>
             </tr>
             <tr>
                 <td>
                     <label for="male">Gender</label>
                 </td>
-                <td> <label><input type="radio" name="gender"  id="male" value="male" class="radio-gender"> Male</label></td>
+                <td> <label><input type="radio" name="gender"  id="male" value="male" class="radio-gender" > Male</label></td>
             </tr>
             <tr>
                 <td>
 
                 </td>
                 <td>
-                    <label><input type="radio" name="gender" id="female" value="female" class="radio-gender">Female</label>
+                    <label><input type="radio" name="gender" id="female" value="female" class="radio-gender" required>Female</label>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="phone">Phone number:</label>
                 </td>
-                <td> <input type="tel" id="phone"></td>
+                <td> <input type="tel" id="phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"  required value="+79242250965"></td>
             </tr>
 
             <tr>
                 <td>
                     <label for="link">Profile link:</label>
                 </td>
-                <td> <input type="url" id="link"></td>
+                <td> <input type="url" id="link" value="https://www.google.ru/" required></td>
             </tr>
             <tr>
                 <td>
                     <label for="salary">Salary:</label>
                 </td>
-                <td> <input type="number" id="salary"></td>
+                <td> <input type="number" id="salary" min="0" required></td>
             </tr>
             <tr>
                 <td>
                     <label for="token">Token:</label>
                 </td>
-                <td> <input type="text" id="token"></td>
+                <td> <input type="text" id="token" pattern="\b[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}\b" value="0744a0c6-79c8-4ff1-813e-b2a1975dae51" required></td>
             </tr>
 
             <tr>
                 <td>
                     <label for="comment">Comment</label>
                 </td>
-                <td> <textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+                <td> <textarea name="comment" id="comment" cols="30" rows="10" required></textarea></td>
             </tr>
         </table>
 <div class="button-submit-container">
