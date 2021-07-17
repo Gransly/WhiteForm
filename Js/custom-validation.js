@@ -1,12 +1,12 @@
-
 let passwordField = document.getElementById("password");
+passwordField.addEventListener("input", (event) => {
+    passwordField.setCustomValidity('');
 
-passwordField.addEventListener("input", (event)=>
-{
-    console.log(`Validity - ${passwordField.checkValidity()} ${passwordField.validity.valid}`)
-    if (passwordField.checkValidity() === true) {
+    if (!!passwordField.validity.valid) {
         passwordField.setCustomValidity("");
+    } else if (passwordField.value.length < 6) {
+        passwordField.setCustomValidity("Password length must be equal or bigger than 6");
     } else {
-        passwordField.setCustomValidity("Password must contain from 6 to 12 symbols, capital, lowercase letters and digits");
+        passwordField.setCustomValidity("Password must contain capital, lowercase letters and digits");
     }
 });

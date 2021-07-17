@@ -8,13 +8,13 @@
 <body>
 <div class="form-container">
     <form id="form">
-        <h1 class="form-header">Add employer</h1>
+        <h1 class="form-header">Add employee</h1>
         <table>
             <tr>
                 <td>
                     <label for="email">Email</label>
                 </td>
-                <td> <input type="email" id="email" name="email" value="bob031299@gmail.com" required ></td>
+                <td> <input type="email" id="email" name="email" placeholder="exemple@exemple.com" required ></td>
             </tr>
             <tr>
                 <td>
@@ -26,7 +26,7 @@
                 <td>
                     <label for="name">Full name</label>
                 </td>
-                <td> <input type="text" id="name" name="fullName" pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})" required></td>
+                <td> <input type="text" id="name" name="fullName" placeholder="Sam Smith" pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})" required></td>
             </tr>
             <tr>
                 <td>
@@ -38,7 +38,7 @@
                 <td>
                     <label for="male">Gender</label>
                 </td>
-                <td> <label><input type="radio" name="gender"  id="male" value="MALE" class="radio-gender" > Male</label></td>
+                <td> <label><input type="radio" name="gender"  id="male" value="MALE" class="radio-gender"  required> Male</label></td>
             </tr>
             <tr>
                 <td>
@@ -52,26 +52,25 @@
                 <td>
                     <label for="phone">Phone number:</label>
                 </td>
-                <td> <input type="tel" id="phone" name="phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"  required value="+79242250965"></td>
+                <td> <input type="tel" id="phone" name="phone" placeholder="+78005553535" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"  required></td>
             </tr>
 
             <tr>
                 <td>
                     <label for="link">Profile link:</label>
                 </td>
-                <td> <input type="url" id="link" name="profileURL" value="https://www.google.ru/" ></td>
+                <td> <input type="url" id="link" name="profileURL" placeholder="https://www.google.ru/" ></td>
             </tr>
             <tr>
                 <td>
                     <label for="salary">Salary:</label>
                 </td>
-                <td> <input type="number" id="salary" name="salary" min="0" required></td>
+                <td> <input type="number" id="salary" name="salary" placeholder="100500" min="0" required></td>
             </tr>
             <tr>
                 <td>
-                    <label for="token">Token:</label>
                 </td>
-                <td> <input type="text" id="token" name="tokenId" pattern="\b[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}\b" value="0744a0c6-79c8-4ff1-813e-b2a1975dae51" required></td>
+                <td> <input type="hidden" id="token" name="tokenId" pattern="\b[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}\b" value="0744a0c6-79c8-4ff1-813e-b2a1975dae51" required></td>
             </tr>
 
             <tr>
